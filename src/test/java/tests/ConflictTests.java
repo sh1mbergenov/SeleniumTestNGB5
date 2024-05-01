@@ -16,4 +16,9 @@ public class ConflictTests {
        String message = "Welcome to USA";
         Assert.assertTrue(message.toLowerCase().contains("usa"));
     }
+    @Test
+    public void test4(){
+      Assert.assertEquals(5,5);
+    }
+
 }
