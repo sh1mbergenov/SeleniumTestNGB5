@@ -28,7 +28,7 @@ public class TestNGIntroTests {
     @Test
     public void test1(){
         System.out.println("I am test 1");
-        Assert.assertTrue(10>9);
+        Assert.assertTrue(22>19);
     }
 
     @Test
