@@ -1,5 +1,7 @@
 package tests.exampleWebsites;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -8,6 +10,7 @@ import utilities.Driver;
 import utilities.SeleniumUtils;
 
 public class GoogleTest {
+    private static final Logger logger  = LogManager.getLogger(GoogleTest.class);
 
     @BeforeSuite
     public static void beforeSuiteMethod(){
@@ -19,7 +22,7 @@ public class GoogleTest {
     }
     @Test(groups = {"login"})
     public void googleTest2(){
-        System.out.println("This is test 2 of goggle");
+        logger.info("This is test 2 of goggle");
         SeleniumUtils.waitForSeconds(3);
     }
     @Test(groups = {"sanity"})

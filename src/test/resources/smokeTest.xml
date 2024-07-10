@@ -8,7 +8,7 @@
                     </exclude>
                 </methods>
             </class>
-            <class name="tests.exampleWebsites.GoogleTest"></class>
+<!--            <class name="tests.exampleWebsites.GoogleTest"></class>-->
         </classes>
 
           </test>
